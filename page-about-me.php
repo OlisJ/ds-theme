@@ -1,7 +1,11 @@
+<?php
+    // Template Name: About Page
+?>
+
+
 <?php  get_header();?>
 
 <h1 id="h1">hello</h1>
-<button id='btn'>change</button>
 
 <?php
 if(have_posts()):
@@ -9,12 +13,13 @@ if(have_posts()):
 ?>
 
 <h2><?php the_title();  ?></h2>
-<small><?php  the_time("Y/m/d");   ?> in <?php the_category();   ?></small>
 <p><?php the_content(); ?></p>
 <?php endwhile;  ?>
 <?php endif; ?>
 
 
 <?php get_footer();?>
+
+
 
     
