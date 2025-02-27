@@ -1,6 +1,7 @@
 <?php
 function add_theme_script(){
     wp_enqueue_style("style", get_template_directory_uri()."/style.css", false, "1.0", "all");
+    wp_enqueue_style("main", get_template_directory_uri()."/css/main.css", false, "1.0", "all");
     wp_enqueue_script("main",get_template_directory_uri()."/js/main.js", array("jquery"), "1.0", true);
 
     if(is_singular()&& comments_open()&& get_option('thread-comments')){
@@ -17,7 +18,5 @@ function ds_set_up(){
 
 add_action("init", "ds_set_up");
 add_theme_support('post-thumbnails');
-
-
 
 ?>
