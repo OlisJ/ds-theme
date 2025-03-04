@@ -1,7 +1,7 @@
 <?php  get_header();?>
 
 <h1 id="h1">hello</h1>
-<button id='btn'>change</button>
+<button type="button" class="btn btn-warning">Warning</button>
 <div >
 
     <?php
@@ -16,6 +16,8 @@
     <?php endwhile;  ?>
     <?php endif; ?>
 </div>
+
+
 
 <?php get_footer();?>
 
