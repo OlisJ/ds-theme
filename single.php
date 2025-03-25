@@ -18,8 +18,8 @@
             if(comments_open()){
                 comments_template();
             }else{
-                echo"<h5>Sorry, comments are closed!!! </h5>"
-            }
+                echo"<h5>Sorry, comments are closed!!! </h5>";
+            };
         ?>
     <?php
         endwhile;
